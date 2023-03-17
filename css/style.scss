@@ -623,22 +623,6 @@ body {
             left: 50%;
             transform: translateX(-50%);
             font-family: 'poppinsSemiBold';
-            // position: relative;
-
-            // &::before{
-            //     content: "";
-            //     width: 500px;
-            //     left: 50%;
-            //     overflow: hidden;
-            //     z-index: -1;
-            //     transform: translateX(-50%);
-            //     // bottom: 30%;
-            //     // transform: translateY(-50%);
-            //     height: 100px;
-            //     background: var(--experiment-color);
-            //     // display: block;
-            //     position: absolute;
-            // }
         }
     }
 
@@ -683,6 +667,15 @@ body {
                 // font-size: 20px;
                 font-family: 'poppinsRegular';
                 position: static;
+
+                &::before{
+                    content: "";
+                    width: 100px;
+                    height: 50px;
+                    background-color: var(--experiment-color);
+                    position: absolute;
+                    display: block;
+                }
             }
         }
 
@@ -719,6 +712,7 @@ body {
     width: 100%;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 
     h2 {
         font-family: 'poppinsSemiBold';
@@ -760,5 +754,18 @@ body {
         top: 7rem;
         left: 25rem;
         transform: rotate(30deg);
+    }
+
+    .rec-3 {
+        width: 300px;
+        height: 300px;
+        // border: 2px solid var(--white);
+        background: var(--white);
+        position: absolute;
+        z-index: -2;
+        bottom: 2rem;
+        right: 10rem;
+        transform: rotate(30deg);
+        // overflow: hidden;
     }
 }
