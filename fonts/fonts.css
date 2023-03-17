@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'drukRegular';
+    src: url(./DrukWide-Medium-Trial.otf);
+}
+
+@font-face {
+    font-family: 'drukBold';
+    src: url(./DrukWide-Bold-Trial.otf);
+}
+
+@font-face {
+    font-family: 'drukWideRegular';
+    src: url(./DrukTextWide-Medium-Trial.otf);
+}
+
+@font-face {
+    font-family: 'drukWideBold';
+    src: url(./DrukTextWide-Bold-Trial.otf);
+}
+
+@font-face {
+    font-family: 'poppinsLight';
+    src: url(./Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: 'poppinsRegular';
+    src: url(./Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'poppinsBold';
+    src: url(./Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'poppinsSemiBold';
+    src: url(./Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'sfProRegular';
+    src: url(./SF-Pro-Display-Regular.otf);
+}
+
+@font-face {
+    font-family: 'sfProBold';
+    src: url(./SF-Pro-Display-Bold.otf);
+}
+
+@font-face {
+    font-family: 'sfProSemiBold';
+    src: url(./SF-Pro-Display-Semibold.otf);
+}

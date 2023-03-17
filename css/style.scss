@@ -1,0 +1,764 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    overflow-x: hidden;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+@import url(./navigation.css);
+
+
+
+body {
+    background: var(--bg-color);
+    color: #fff;
+    font-family: 'poppinsRegular';
+}
+
+:root {
+    --bg-color: #000;
+    --dark-grey: #080808;
+    --grey: #1c1c1c;
+    --another-grey: #313131;
+    --standard-grey: #676767;
+    --white: #fff;
+    --experiment-color: linear-gradient(to right, red, blue);
+}
+
+// ****************************************************
+// ********************** H E R O *********************
+// ****************************************************
+
+#hero {
+    background: var(--dark-grey);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+
+    .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 25%;
+
+        h1 {
+            font-family: 'sfProBold';
+            font-size: 100px;
+        }
+
+        p {
+            font-family: 'drukWideBold';
+            font-size: 30px;
+            line-height: 1.5cm;
+            color: #737373;
+            -webkit-box-reflect: below -15px linear-gradient(transparent, #0001);
+
+            span {
+                animation: animateText 4s linear infinite alternate-reverse;
+            }
+
+            @keyframes animateText {
+
+                0%,
+                10%,
+                20%,
+                50.1%,
+                60%,
+                65.1%,
+                80%,
+                90.1%,
+                92% {
+                    color: #0e3742;
+                    text-shadow: none;
+                }
+
+                18.1%,
+                20.1%,
+                30%,
+                50%,
+                60.1%,
+                65%,
+                88.1%,
+                90%,
+                92.1%,
+                100% {
+                    color: #fff;
+                    text-shadow: 0 0 10px #03bcf4,
+                        0 0 20px #03bcf4,
+                        0 0 40px #03bcf4,
+                        0 0 80px #03bcf4,
+                        0 0 100px #03bcf4;
+                }
+            }
+        }
+    }
+
+    .icons {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+
+        #memoji {
+            position: absolute;
+            bottom: 0;
+            width: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #css {
+            position: absolute;
+            left: 10%;
+            bottom: 5%;
+            width: 12%;
+            animation: animateCSS 30s linear infinite;
+
+            @keyframes animateCSS {
+                50% {
+                    left: 1%;
+                    bottom: 1%;
+                }
+            }
+        }
+
+        #tags {
+            position: absolute;
+            left: 20%;
+            bottom: 28%;
+            width: 10%;
+            animation: animateTAGS 20s linear infinite;
+
+            @keyframes animateTAGS {
+                50% {
+                    left: 30%;
+                }
+            }
+        }
+
+        #html {
+            position: absolute;
+            top: 37%;
+            right: 35%;
+            width: 13%;
+            animation: animateHTML 10s linear infinite;
+
+            @keyframes animateHTML {
+                50% {
+                    top: 40%;
+                    // right: 30%;
+                }
+            }
+        }
+
+        #xd {
+            position: absolute;
+            bottom: 15%;
+            right: 25%;
+            width: 10%;
+            animation: animateXD 15s linear infinite;
+
+            @keyframes animateXD {
+                50% {
+                    bottom: 20%;
+                    right: 15%;
+                }
+            }
+        }
+
+        #js {
+            position: absolute;
+            right: 5%;
+            bottom: 5%;
+            width: 15%;
+            animation: animateJS 10s linear infinite;
+
+            @keyframes animateJS {
+                50% {
+                    right: 1%;
+                }
+            }
+        }
+
+        #wp {
+            position: absolute;
+            top: 40%;
+            right: 10%;
+            width: 10%;
+            animation: animateWP 17s linear infinite;
+
+            @keyframes animateWP {
+                50% {
+                    top: 45%;
+                }
+            }
+        }
+    }
+
+    &::after {
+        content: "";
+        width: 98%;
+        height: 8px;
+        border-radius: 50px;
+        background: rgb(255, 237, 195);
+        position: absolute;
+        bottom: 0;
+        // box-shadow: 0 0 0 #fff,
+        //     0 0 10px #03bcf4,
+        //     0 0 20px #03bcf4,
+        //     0 0 25px #03bcf4,
+        //     0 0 30px #03bcf4, ;
+        animation: neonLight 4s infinite alternate-reverse;
+
+        @keyframes neonLight {
+            100% {
+                box-shadow: 0 0 5px rgb(255, 237, 195),
+                    0 0 10px #03bcf4,
+                    0 0 20px #03bcf4,
+                    0 0 25px #03bcf4,
+                    0 0 30px #03bcf4, ;
+            }
+
+            0% {
+                box-shadow: 0 0 2px rgb(255, 237, 195),
+                    0 0 5px #03bcf4,
+                    0 0 10px #03bcf4,
+                    0 0 15px #03bcf4,
+                    0 0 20px #03bcf4, ;
+            }
+        }
+    }
+}
+
+
+// ******************************************************
+// ********************** A B O U T *********************
+// ******************************************************
+
+#about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin: 10% 0;
+
+    .about-1 {
+        padding: 0 30%;
+        // background: linear-gradient(to right, red,blue);
+
+        h2 {
+            font-size: 40px;
+            font-family: 'drukWideBold';
+            // line-height: 3cm;
+            text-shadow: 0 0 5px #03bcf4,
+                0 0 10px #03bcf4,
+                0 0 20px #03bcf4,
+                0 0 40px #03bcf4,
+                0 0 60px #03bcf4;
+
+        }
+
+        h4 {
+            font-family: 'sfProRegular';
+            font-size: 32px;
+            line-height: 1cm;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+}
+
+// ******************************************************
+// ********************** Q U O T E *********************
+// ******************************************************
+
+#quote {
+    width: 100%;
+    color: #080808;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+
+    h2 {
+        font-family: 'drukWideBold';
+        font-size: 25px;
+    }
+}
+
+// ********************************************************
+// ********************** S K I L L S *********************
+// ********************************************************
+
+#skills {
+    width: 100%;
+    padding: 70px;
+
+    h2 {
+        color: #fff;
+        font-family: 'drukWideBold';
+        font-size: 7rem;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 3px;
+    }
+
+    .skill-cards {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 70px;
+        padding: 0 70px;
+    }
+
+    .skill-card {
+        position: relative;
+        border: 3px solid #fff;
+        border-radius: 5px;
+        padding: 100px 30px;
+        text-align: center;
+        // box-shadow: transparent;
+        box-shadow: inset 0 0 5px #03bcf4,
+            inset 0 0 10px #03bcf4,
+            inset 0 0 20px #03bcf4,
+            0 0 10px #03bcf4,
+            0 0 20px #039cf4;
+        transition: .5s;
+        animation: animateCard linear 30s infinite;
+
+        @keyframes animateCard {
+            0% {
+                filter: hue-rotate(0deg);
+            }
+
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        img {
+            position: absolute;
+            top: -8rem;
+            left: 50%;
+            transform: translateX(-50%);
+            // width: 50%;
+        }
+
+        .skill-text {
+            h3 {
+                font-family: 'drukWideBold';
+                font-size: 20px;
+                position: relative;
+                margin-bottom: 40px;
+
+                &::after {
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    position: absolute;
+                    background: #fff;
+                    border-radius: 50%;
+                    display: block;
+                    bottom: -20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    box-shadow: 0 0 5px #03bcf4,
+                        0 0 10px #03bcf4,
+                        0 0 20px #03bcf4;
+                }
+            }
+
+            p {
+                // margin-top: 20px;
+                font-family: 'poppinsSemiBold';
+                line-height: .7cm;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .skill-card:hover {
+        box-shadow: inset 0 0 5px #03bcf4,
+            inset 0 0 10px #03bcf4,
+            inset 0 0 20px #03bcf4,
+            0 0 10px #03bcf4,
+            0 0 20px #03bcf4,
+            0 0 40px #039cf4,
+            0 0 80px #039cf4,
+            0 0 100px #0380f4;
+    }
+
+    .add-skills {
+        text-align: center;
+        margin-top: 10%;
+
+        h3 {
+            font-size: 50px;
+            font-family: 'drukWideBold';
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 2px;
+            color: #fff;
+        }
+
+        .add-skill-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .add-skill {
+            margin-top: 80px;
+            padding: 0 100px;
+
+            h4 {
+                font-family: 'drukWideBold';
+                font-size: 24px;
+            }
+
+            p {
+                margin: 40px 0;
+                font-size: 18px;
+                font-family: 'poppinsSemiBold';
+                animation: animateLine linear 30s infinite;
+
+                @keyframes animateLine {
+                    0% {
+                        filter: hue-rotate(0deg);
+                    }
+
+                    100% {
+                        filter: hue-rotate(360deg);
+                    }
+                }
+            }
+
+            p::before,
+            p::after {
+                content: '';
+                width: 40%;
+                margin: 50px 50%;
+                display: block;
+                height: 5px;
+                border-radius: 10px;
+                background: #fff;
+                transform: translateX(-50%);
+                box-shadow: 0 0 5px #03bcf4,
+                    0 0 10px #03bcf4,
+                    0 0 20px #039cf4,
+                    0 0 40px #039cf4;
+
+            }
+        }
+    }
+}
+
+// ********************************************************
+// ********************** P R O J E C T S *********************
+// ********************************************************
+
+#projects {
+    background: var(--dark-grey);
+    // width: 100%;
+    padding: 100px 50px;
+
+    h2 {
+        font-family: 'drukWideBold';
+        font-size: 7rem;
+        text-align: right;
+        color: var(--standard-grey);
+    }
+
+    .proj-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+        text-align: left;
+        margin: 100px 0;
+        position: relative;
+
+        a {
+            background: var(--white);
+            padding: 30px 40px;
+            color: var(--bg-color);
+            width: 18%;
+            font-size: 20px;
+            position: absolute;
+            bottom: -8rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'poppinsSemiBold';
+            // position: relative;
+
+            // &::before{
+            //     content: "";
+            //     width: 500px;
+            //     left: 50%;
+            //     overflow: hidden;
+            //     z-index: -1;
+            //     transform: translateX(-50%);
+            //     // bottom: 30%;
+            //     // transform: translateY(-50%);
+            //     height: 100px;
+            //     background: var(--experiment-color);
+            //     // display: block;
+            //     position: absolute;
+            // }
+        }
+    }
+
+    .proj-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 50px;
+        gap: 50px;
+        position: relative;
+        margin: 50px 0;
+
+        .img {
+            width: 100%;
+            z-index: 1;
+            background: var(--grey);
+
+            h3 {
+                font-family: 'drukWideBold';
+                font-size: 40px;
+                margin: 20px 0;
+                text-align: center;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .card-text {
+            width: 100%;
+            z-index: 1;
+
+            p {
+                line-height: 1cm;
+                font-size: 16px;
+                margin: 50px 0;
+            }
+
+            .proj-btns {
+                padding: 20px 30px;
+                // font-size: 20px;
+                font-family: 'poppinsRegular';
+                position: static;
+            }
+        }
+
+        .grey-rect {
+            width: 500px;
+            height: 500px;
+            border: 5px solid rgba($color: #fff, $alpha: 1);
+            background: transparent;
+            position: absolute;
+            right: -15%;
+            transform: rotate(25deg);
+            box-shadow: inset 0 0 5px #03bcf4,
+                inset 0 0 10px #03bcf4,
+                // inset 0 0 20px #039cf4,
+                0 0 5px #03bcf4,
+                0 0 10px #03bcf4,
+                0 0 20px #039cf4,
+                0 0 40px #039cf4;
+        }
+    }
+}
+
+// ********************************************************
+// ********************** H I R E  M E *********************
+// ********************************************************
+
+#hire-me {
+    background: var(--another-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+    h2 {
+        font-family: 'poppinsSemiBold';
+        font-size: 50px;
+        color: var(--bg-color);
+        margin-bottom: 50px;
+    }
+
+    .buttons {
+        a {
+            color: var(--white);
+            padding: 20px 40px;
+            margin: 0 10px;
+            background: var(--dark-grey);
+
+        }
+    }
+
+    .rec-1 {
+        width: 50px;
+        height: 50px;
+        border: 2px solid var(--white);
+        // background: var(--white);
+        position: absolute;
+        z-index: -1;
+        top: 2rem;
+        left: 10rem;
+        transform: rotate(30deg);
+
+    }
+
+    .rec-2 {
+        width: 100px;
+        height: 100px;
+        // border: 2px solid var(--white);
+        background: var(--white);
+        position: absolute;
+        z-index: -1;
+        top: 7rem;
+        left: 25rem;
+        transform: rotate(30deg);
+    }
+}

@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    // background: aliceblue;
+    font-family: 'sfProBold';
+    padding: 20px 70px;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+
+    .logo {
+        display: flex;
+        cursor: pointer;
+        width: 8%;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .nav-items {
+        gap: 50px;
+        display: flex;
+
+        li {
+            a {
+                color: #fff;
+                font-size: 15px;
+                transition: .3s ease-in-out;
+            }
+
+            a:hover {
+                // animation: glow 2s ease infinite alternate-reverse;
+                text-shadow:
+                    0 0 0px #03bcf4,
+                    0 0 5px #03bcf4,
+                    0 0 7px #03bcf4,
+                    0 0 10px #03bcf4,
+                    0 0 15px #03bcf4,
+                    0 0 20px #03bcf4,
+                    0 0 25px #03bcf4,
+                    0 0 30px #03bcf4;
+            }
+            // @keyframes glow {
+                
+            //     100% {
+            //         transition: .3s ease;
+            //         text-shadow:
+            //             0 0 0px #fff,
+            //             0 0 5px #fff,
+            //             0 0 10px #fff,
+            //             0 0 20px #f09,
+            //             0 0 30px #f09,
+            //             0 0 35px #f09,
+            //             0 0 40px #f09,
+            //             0 0 50px #f09;
+            //     }
+            //     0% {
+            //         text-shadow:
+            //             0 0 0px #fff,
+            //             0 0 2px #fff,
+            //             0 0 6px #fff,
+            //             0 0 8px #f09,
+            //             0 0 10px #f09,
+            //             0 0 12px #f09,
+            //             0 0 15px #f09,
+            //             0 0 20px #f09;
+            //     }
+            // }
+        }
+
+    }
+
+}
