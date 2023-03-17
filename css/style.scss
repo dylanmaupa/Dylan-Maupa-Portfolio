@@ -148,7 +148,7 @@ body {
     --another-grey: #313131;
     --standard-grey: #676767;
     --white: #fff;
-    --experiment-color: linear-gradient(to right, red, blue);
+    --experiment-color: linear-gradient(to right, #3bc, blue);
 }
 
 // ****************************************************
@@ -667,15 +667,6 @@ body {
                 // font-size: 20px;
                 font-family: 'poppinsRegular';
                 position: static;
-
-                &::before{
-                    content: "";
-                    width: 100px;
-                    height: 50px;
-                    background-color: var(--experiment-color);
-                    position: absolute;
-                    display: block;
-                }
             }
         }
 
@@ -731,20 +722,20 @@ body {
         }
     }
 
-    .rec-1 {
-        width: 50px;
-        height: 50px;
+    .rect-1 {
+        width: 150px;
+        height: 150px;
         border: 2px solid var(--white);
         // background: var(--white);
         position: absolute;
         z-index: -1;
-        top: 2rem;
-        left: 10rem;
+        bottom: 2rem;
+        left: 6rem;
         transform: rotate(30deg);
-
     }
+    
 
-    .rec-2 {
+    .rect-2 {
         width: 100px;
         height: 100px;
         // border: 2px solid var(--white);
@@ -754,9 +745,32 @@ body {
         top: 7rem;
         left: 25rem;
         transform: rotate(30deg);
+        overflow: hidden;
     }
 
-    .rec-3 {
+    .rect-2::before{
+        content: "";
+        margin: 0 10px;
+        top: -1rem;
+        width: 80%;
+        height: 170%;
+        background: var(--experiment-color);
+        position: absolute;
+        animation: rotateRec 4s infinite linear;
+        @keyframes rotateRec {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    }
+    .rect-2::after{
+        content: "";
+    }
+
+    .rect-3 {
         width: 300px;
         height: 300px;
         // border: 2px solid var(--white);

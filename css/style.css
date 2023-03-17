@@ -144,7 +144,7 @@ body {
   --another-grey: #313131;
   --standard-grey: #676767;
   --white: #fff;
-  --experiment-color: linear-gradient(to right, red, blue);
+  --experiment-color: linear-gradient(to right, #3bc, blue);
 }
 
 #hero {
@@ -595,14 +595,6 @@ body {
   font-family: "poppinsRegular";
   position: static;
 }
-#projects .proj-card .card-text .proj-btns::before {
-  content: "";
-  width: 100px;
-  height: 50px;
-  background-color: var(--experiment-color);
-  position: absolute;
-  display: block;
-}
 #projects .proj-card .grey-rect {
   width: 500px;
   height: 500px;
@@ -638,17 +630,17 @@ body {
   margin: 0 10px;
   background: var(--dark-grey);
 }
-#hire-me .rec-1 {
-  width: 50px;
-  height: 50px;
+#hire-me .rect-1 {
+  width: 150px;
+  height: 150px;
   border: 2px solid var(--white);
   position: absolute;
   z-index: -1;
-  top: 2rem;
-  left: 10rem;
+  bottom: 2rem;
+  left: 6rem;
   transform: rotate(30deg);
 }
-#hire-me .rec-2 {
+#hire-me .rect-2 {
   width: 100px;
   height: 100px;
   background: var(--white);
@@ -657,8 +649,39 @@ body {
   top: 7rem;
   left: 25rem;
   transform: rotate(30deg);
+  overflow: hidden;
 }
-#hire-me .rec-3 {
+#hire-me .rect-2::before {
+  content: "";
+  margin: 0 10px;
+  top: -1rem;
+  width: 80%;
+  height: 170%;
+  background: var(--experiment-color);
+  position: absolute;
+  -webkit-animation: rotateRec 4s infinite linear;
+          animation: rotateRec 4s infinite linear;
+}
+@-webkit-keyframes rotateRec {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateRec {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#hire-me .rect-2::after {
+  content: "";
+}
+#hire-me .rect-3 {
   width: 300px;
   height: 300px;
   background: var(--white);
