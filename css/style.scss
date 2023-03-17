@@ -664,7 +664,6 @@ body {
 
             .proj-btns {
                 padding: 20px 30px;
-                // font-size: 20px;
                 font-family: 'poppinsRegular';
                 position: static;
             }
@@ -726,7 +725,6 @@ body {
         width: 150px;
         height: 150px;
         border: 2px solid var(--white);
-        // background: var(--white);
         position: absolute;
         z-index: -1;
         bottom: 2rem;
@@ -738,7 +736,6 @@ body {
     .rect-2 {
         width: 100px;
         height: 100px;
-        // border: 2px solid var(--white);
         background: var(--white);
         position: absolute;
         z-index: -1;
@@ -773,7 +770,6 @@ body {
     .rect-3 {
         width: 300px;
         height: 300px;
-        // border: 2px solid var(--white);
         background: var(--white);
         position: absolute;
         z-index: -2;
