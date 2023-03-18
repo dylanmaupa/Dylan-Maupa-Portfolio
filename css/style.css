@@ -755,4 +755,11 @@ body {
   #skills .skill-card .skill-text p {
     font-size: 15px;
   }
+  #projects {
+    padding: 100px 40px;
+  }
+  #projects .proj-card .grey-rect {
+    width: 450px;
+    height: 450px;
+  }
 }/*# sourceMappingURL=style.css.map */
