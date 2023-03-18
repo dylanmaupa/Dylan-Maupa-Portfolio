@@ -557,11 +557,10 @@ body {
   left: 50%;
   transform: translateX(-50%);
   font-family: "poppinsSemiBold";
+  text-align: center;
 }
 #projects .proj-card {
   display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 0 50px;
   gap: 50px;
   position: relative;
@@ -588,12 +587,13 @@ body {
 #projects .proj-card .card-text p {
   line-height: 1cm;
   font-size: 16px;
-  margin: 50px 0;
+  margin-bottom: 50px;
 }
 #projects .proj-card .card-text .proj-btns {
   padding: 20px 30px;
   font-family: "poppinsRegular";
   position: static;
+  text-align: inherit;
 }
 #projects .proj-card .grey-rect {
   width: 500px;
@@ -635,7 +635,6 @@ body {
 #hire-me .rect-1 {
   width: 150px;
   height: 150px;
-  border: 2px solid var(--white);
   position: absolute;
   z-index: -1;
   bottom: 2rem;
@@ -758,8 +757,15 @@ body {
   #projects {
     padding: 100px 40px;
   }
+  #projects .proj-cards a {
+    padding: 20px 20px;
+  }
   #projects .proj-card .grey-rect {
     width: 450px;
     height: 450px;
+  }
+  #projects .proj-card .card-text .proj-btns {
+    padding: 15px 20px;
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */

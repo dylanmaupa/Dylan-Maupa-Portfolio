@@ -624,13 +624,14 @@ body {
             left: 50%;
             transform: translateX(-50%);
             font-family: 'poppinsSemiBold';
+            text-align: center;
         }
     }
 
     .proj-card {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        // align-items: center;
+        // justify-content: center;
         padding: 0 50px;
         gap: 50px;
         position: relative;
@@ -660,13 +661,14 @@ body {
             p {
                 line-height: 1cm;
                 font-size: 16px;
-                margin: 50px 0;
+                margin-bottom: 50px;
             }
 
             .proj-btns {
                 padding: 20px 30px;
                 font-family: 'poppinsRegular';
                 position: static;
+                text-align: inherit;
             }
         }
 
@@ -726,7 +728,7 @@ body {
     .rect-1 {
         width: 150px;
         height: 150px;
-        border: 2px solid var(--white);
+        // border: 2px solid var(--white);
         position: absolute;
         z-index: -1;
         bottom: 2rem;
@@ -873,10 +875,22 @@ body {
     #projects{
         padding: 100px 40px;
 
+        .proj-cards{
+            a{
+                padding: 20px 20px;
+            }
+        }
+
         .proj-card{
             .grey-rect{
                 width: 450px;
                 height: 450px;
+            }
+            .card-text{
+                .proj-btns{
+                    padding: 15px 20px;
+                    font-size: 16px;
+                }
             }
         }
     }

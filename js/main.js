@@ -32,7 +32,7 @@ window.addEventListener('scroll', () => {
     greyRect2.style.rotate = value * 0.09 + 'deg';
 });
 
-ScrollReveal().reveal(".skill-card, #about", { delay: 200, easing: "ease-out", interval: 200, scale: 1.2 });
+ScrollReveal().reveal(".skill-card, #about,.img,.grey-rect", { delay: 200, easing: "ease-out", interval: 200, scale: 1.2 });
 
 
 // const rect1 = document.getElementById("rect-1")
