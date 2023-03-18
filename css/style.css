@@ -604,6 +604,8 @@ body {
   right: -15%;
   transform: rotate(25deg);
   box-shadow: inset 0 0 5px #03bcf4, inset 0 0 10px #03bcf4, 0 0 5px #03bcf4, 0 0 10px #03bcf4, 0 0 20px #039cf4, 0 0 40px #039cf4;
+  -webkit-animation: animateLine linear 30s infinite;
+          animation: animateLine linear 30s infinite;
 }
 
 #hire-me {
@@ -638,7 +640,39 @@ body {
   z-index: -1;
   bottom: 2rem;
   left: 6rem;
-  transform: rotate(30deg);
+  box-shadow: inset 0 0 5px #03bcf4, inset 0 0 10px #03bcf4, 0 0 5px #03bcf4, 0 0 10px #03bcf4, 0 0 20px #039cf4, 0 0 40px #039cf4;
+  -webkit-animation: animateRec linear 30s infinite;
+          animation: animateRec linear 30s infinite;
+}
+@-webkit-keyframes animateRec {
+  0% {
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    bottom: 7rem;
+    left: -3rem;
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(90deg);
+    filter: hue-rotate(360deg);
+  }
+}
+@keyframes animateRec {
+  0% {
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    bottom: 7rem;
+    left: -3rem;
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(90deg);
+    filter: hue-rotate(360deg);
+  }
 }
 #hire-me .rect-2 {
   width: 100px;
@@ -651,36 +685,6 @@ body {
   transform: rotate(30deg);
   overflow: hidden;
 }
-#hire-me .rect-2::before {
-  content: "";
-  margin: 0 10px;
-  top: -1rem;
-  width: 80%;
-  height: 170%;
-  background: var(--experiment-color);
-  position: absolute;
-  -webkit-animation: rotateRec 4s infinite linear;
-          animation: rotateRec 4s infinite linear;
-}
-@-webkit-keyframes rotateRec {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotateRec {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-#hire-me .rect-2::after {
-  content: "";
-}
 #hire-me .rect-3 {
   width: 300px;
   height: 300px;
@@ -690,4 +694,65 @@ body {
   bottom: 2rem;
   right: 10rem;
   transform: rotate(30deg);
+}
+#hire-me .rect-4 {
+  width: 50px;
+  height: 50px;
+  background: var(--white);
+  position: absolute;
+  z-index: -2;
+  top: 2rem;
+  right: 9rem;
+  box-shadow: inset 0 0 5px #03bcf4, inset 0 0 10px #03bcf4, 0 0 5px #03bcf4, 0 0 10px #03bcf4, 0 0 20px #039cf4, 0 0 40px #039cf4;
+  -webkit-animation: rect4 linear 30s infinite;
+          animation: rect4 linear 30s infinite;
+}
+@-webkit-keyframes rect4 {
+  0% {
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    top: 7rem;
+    right: 9rem;
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+@keyframes rect4 {
+  0% {
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    top: 7rem;
+    right: 9rem;
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1320px) {
+  #hero {
+    height: 90vh;
+  }
+  #skills .skill-cards {
+    gap: 50px;
+    padding: 0 60px;
+  }
+  #skills .skill-card {
+    padding: 80px 30px;
+  }
+  #skills .skill-card .skill-text h3 {
+    font-size: 18px;
+  }
+  #skills .skill-card .skill-text p {
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */

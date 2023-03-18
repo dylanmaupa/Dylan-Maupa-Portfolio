@@ -35,4 +35,4 @@ window.addEventListener('scroll', () => {
 ScrollReveal().reveal(".skill-card, #about", { delay: 200, easing: "ease-out", interval: 200, scale: 1.2 });
 
 
-const rect1 = document.getElementById("rect-1")
+// const rect1 = document.getElementById("rect-1")
