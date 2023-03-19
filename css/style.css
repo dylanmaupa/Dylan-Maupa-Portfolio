@@ -645,8 +645,8 @@ body {
   bottom: 2rem;
   left: 6rem;
   box-shadow: inset 0 0 5px #03bcf4, inset 0 0 10px #03bcf4, 0 0 5px #03bcf4, 0 0 10px #03bcf4, 0 0 20px #039cf4, 0 0 40px #039cf4;
-  -webkit-animation: animateRec linear 30s infinite;
-          animation: animateRec linear 30s infinite;
+  -webkit-animation: animateRec linear 20s infinite;
+          animation: animateRec linear 20s infinite;
 }
 @-webkit-keyframes animateRec {
   0% {
@@ -692,24 +692,55 @@ body {
 #hire-me .rect-3 {
   width: 300px;
   height: 300px;
-  background: var(--white);
   position: absolute;
   z-index: -2;
   bottom: 2rem;
   right: 10rem;
   transform: rotate(30deg);
+  box-shadow: inset 0 0 5px #03bcf4, inset 0 0 10px #03bcf4, 0 0 5px #03bcf4, 0 0 10px #03bcf4, 0 0 20px #039cf4, 0 0 40px #039cf4;
+  -webkit-animation: rect3 cubic-bezier(0, 0.43, 0.4, 0.67) 40s infinite;
+          animation: rect3 cubic-bezier(0, 0.43, 0.4, 0.67) 40s infinite;
+}
+@-webkit-keyframes rect3 {
+  0% {
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    bottom: 9rem;
+    right: 2rem;
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+@keyframes rect3 {
+  0% {
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    bottom: 9rem;
+    right: 2rem;
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
 }
 #hire-me .rect-4 {
   width: 50px;
   height: 50px;
-  background: var(--white);
   position: absolute;
   z-index: -2;
   top: 2rem;
   right: 9rem;
   box-shadow: inset 0 0 5px #03bcf4, inset 0 0 10px #03bcf4, 0 0 5px #03bcf4, 0 0 10px #03bcf4, 0 0 20px #039cf4, 0 0 40px #039cf4;
-  -webkit-animation: rect4 linear 30s infinite;
-          animation: rect4 linear 30s infinite;
+  -webkit-animation: rect4 cubic-bezier(0, 0.43, 0.4, 0.67) 30s infinite;
+          animation: rect4 cubic-bezier(0, 0.43, 0.4, 0.67) 30s infinite;
 }
 @-webkit-keyframes rect4 {
   0% {
@@ -850,8 +881,11 @@ body {
   #hero .icons #css, #hero .icons #tags, #hero .icons #html, #hero .icons #js, #hero .icons #wp, #hero .icons #xd {
     display: none;
   }
+  #about .about-1 {
+    padding-inline: 15%;
+  }
   #quote h2 {
-    font-size: 18px;
+    font-size: 15px;
   }
   #skills {
     padding: 70px 0px;
@@ -871,5 +905,48 @@ body {
   }
   #skills .add-skills .add-skill-container {
     flex-direction: column;
+  }
+  #projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 25px;
+  }
+  #projects h2 {
+    font-size: 44px;
+    text-align: center;
+  }
+  #projects .proj-cards a {
+    width: 100%;
+  }
+  #projects .proj-card {
+    flex-direction: column;
+    padding-inline: 0px;
+    text-align: center;
+    margin-block: 30px;
+  }
+  #projects .proj-card .img h3 {
+    font-size: 24px;
+  }
+  #hire-me {
+    padding: 80px 0px;
+  }
+  #hire-me h2 {
+    font-size: 30px;
+  }
+  #hire-me .buttons a {
+    padding: 15px 30px;
+  }
+  #hire-me .rect-1 {
+    left: 0;
+  }
+  #hire-me .rect-3 {
+    width: 100px;
+    height: 100px;
+    right: 15rem;
+  }
+  #hire-me .rect-4 {
+    right: 0;
   }
 }/*# sourceMappingURL=style.css.map */
