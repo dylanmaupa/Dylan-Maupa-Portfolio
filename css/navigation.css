@@ -1,3 +1,13 @@
+:root {
+  --bg-color: #000;
+  --dark-grey: #080808;
+  --grey: #1c1c1c;
+  --another-grey: #313131;
+  --standard-grey: #676767;
+  --white: #fff;
+  --experiment-color: linear-gradient(to right, #3bc, blue);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +20,7 @@ header {
   display: flex;
   justify-content: space-between;
   font-family: "sfProBold";
-  padding: 20px 70px;
+  padding: 10px 70px;
   align-items: center;
   position: absolute;
   z-index: 2;
@@ -23,6 +33,16 @@ header .logo {
 header .logo img {
   width: 100%;
 }
+header .menu {
+  display: none;
+}
+header .menu .line {
+  width: 30px;
+  height: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  background: var(--standard-grey);
+}
 header .nav-items {
   gap: 50px;
   display: flex;
@@ -34,4 +54,31 @@ header .nav-items li a {
 }
 header .nav-items li a:hover {
   text-shadow: 0 0 0px #03bcf4, 0 0 5px #03bcf4, 0 0 7px #03bcf4, 0 0 10px #03bcf4, 0 0 15px #03bcf4, 0 0 20px #03bcf4, 0 0 25px #03bcf4, 0 0 30px #03bcf4;
+}
+
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 10px 60px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  header .logo {
+    width: 10%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  header .logo {
+    width: 12%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  header nav {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  header .menu {
+    display: block;
+  }
 }/*# sourceMappingURL=navigation.css.map */

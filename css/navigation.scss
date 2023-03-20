@@ -1,4 +1,14 @@
-*{
+:root {
+    --bg-color: #000;
+    --dark-grey: #080808;
+    --grey: #1c1c1c;
+    --another-grey: #313131;
+    --standard-grey: #676767;
+    --white: #fff;
+    --experiment-color: linear-gradient(to right, #3bc, blue);
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,20 +20,39 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    // background: aliceblue;
+    // background: var(--dark-grey);
     font-family: 'sfProBold';
-    padding: 20px 70px;
+    padding: 10px 70px;
     align-items: center;
     position: absolute;
     z-index: 2;
+    // box-shadow: 0 0 5px #03bcf4,
+    //     0 0 10px #03bcf4,
+    //     0 0 15px #039cf4;
+    // animation: neonLight 4s infinite alternate-reverse;
 
     .logo {
         display: flex;
         cursor: pointer;
         width: 8%;
+        // flex: 1;
 
-        img{
+        img {
             width: 100%;
+        }
+    }
+
+    .menu {
+        display: none;
+
+        // width: 30px;
+        // height: 15px;
+        .line {
+            width: 30px;
+            height: 5px;
+            margin: 5px;
+            border-radius: 10px;
+            background: var(--standard-grey);
         }
     }
 
@@ -50,34 +79,49 @@ header {
                     0 0 25px #03bcf4,
                     0 0 30px #03bcf4;
             }
-            // @keyframes glow {
-                
-            //     100% {
-            //         transition: .3s ease;
-            //         text-shadow:
-            //             0 0 0px #fff,
-            //             0 0 5px #fff,
-            //             0 0 10px #fff,
-            //             0 0 20px #f09,
-            //             0 0 30px #f09,
-            //             0 0 35px #f09,
-            //             0 0 40px #f09,
-            //             0 0 50px #f09;
-            //     }
-            //     0% {
-            //         text-shadow:
-            //             0 0 0px #fff,
-            //             0 0 2px #fff,
-            //             0 0 6px #fff,
-            //             0 0 8px #f09,
-            //             0 0 10px #f09,
-            //             0 0 12px #f09,
-            //             0 0 15px #f09,
-            //             0 0 20px #f09;
-            //     }
-            // }
+
         }
 
     }
 
+}
+
+@media only screen and (max-width:1320px) {
+    header {
+        padding: 10px 60px;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    header {
+        .logo {
+            width: 10%;
+        }
+    }
+}
+
+@media only screen and (max-width:991px) {
+    header {
+        .logo {
+            width: 12%;
+        }
+    }
+}
+
+@media only screen and (max-width:900px) {
+    header {
+
+        nav {
+            display: none;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .menu {
+            display: block;
+        }
+
+
+    }
 }

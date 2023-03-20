@@ -34,5 +34,9 @@ window.addEventListener('scroll', () => {
 
 ScrollReveal().reveal(".skill-card, #about,.img,.grey-rect", { delay: 200, easing: "ease-out", interval: 200, scale: 1.2 });
 
+const hMenu = document.getElementById("hMenu");
 
-// const rect1 = document.getElementById("rect-1")
+// hMenu.onclick = function(){
+//     const nav = document.querySelector(".nav");
+    
+// }

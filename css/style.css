@@ -137,16 +137,6 @@ body {
   font-family: "poppinsRegular";
 }
 
-:root {
-  --bg-color: #000;
-  --dark-grey: #080808;
-  --grey: #1c1c1c;
-  --another-grey: #313131;
-  --standard-grey: #676767;
-  --white: #fff;
-  --experiment-color: linear-gradient(to right, #3bc, blue);
-}
-
 #hero {
   overflow-x: hidden;
   background: var(--dark-grey);
