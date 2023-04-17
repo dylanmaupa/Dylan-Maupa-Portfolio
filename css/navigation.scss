@@ -31,16 +31,20 @@ header {
     //     0 0 15px #039cf4;
     // animation: neonLight 4s infinite alternate-reverse;
 
-    .logo {
-        display: flex;
-        cursor: pointer;
-        width: 8%;
-        // flex: 1;
-
-        img {
+    a{
+        .logo {
+            display: flex;
+            cursor: pointer;
             width: 100%;
+            // flex: 1;
+    
+            img {
+                width: 100%;
+            }
         }
     }
+
+    
 
     .menu {
         display: none;
@@ -54,6 +58,9 @@ header {
             border-radius: 10px;
             background: var(--standard-grey);
         }
+        // svg:hover{
+        //     fill: var(--standard-grey);
+        // }
     }
 
     .nav-items {
@@ -94,34 +101,44 @@ header {
 
 @media only screen and (max-width:1200px) {
     header {
-        .logo {
-            width: 10%;
+        a{
+            .logo {
+                width: 80%;
+            }
         }
+        
     }
 }
 
 @media only screen and (max-width:991px) {
     header {
-        .logo {
-            width: 12%;
+        a{
+            .logo {
+                width: 70%;
+            }
         }
     }
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:765px) {
     header {
 
         nav {
+            // opacity: 0;
             display: none;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
         }
 
         .menu {
             display: block;
+            cursor: pointer;
         }
-
-
+    }
+    .active{
+        // opacity: 1;
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: .5s ease-in-out;
     }
 }

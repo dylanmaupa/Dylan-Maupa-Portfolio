@@ -594,7 +594,7 @@ body {
     // width: 100%;
     padding: 100px 50px;
     overflow-x: hidden;
-
+    
     h2 {
         font-family: 'drukWideBold';
         font-size: 7rem;
@@ -614,7 +614,7 @@ body {
             background: var(--white);
             padding: 30px 40px;
             color: var(--bg-color);
-            width: 18%;
+            width: 20%;
             font-size: 20px;
             position: absolute;
             bottom: -8rem;
@@ -871,6 +871,8 @@ body {
     }
 }
 
+// Laptop Responsive
+
 @media only screen and (max-width:1320px) {
     #hero{
         height: 90vh;
@@ -919,6 +921,8 @@ body {
     }
 }
 
+// Laptop Responsive
+
 @media only screen and (max-width:1150px) {
     #about{
         .about-1{
@@ -939,6 +943,8 @@ body {
         }
     }
 }
+
+// Laptop Responsive to Tablet
 
 @media only screen and (max-width:1050px) {
     #skills{
@@ -967,6 +973,8 @@ body {
         }
     }
 }
+
+// Middle screen(Tablet Screens)
 
 @media only screen and (max-width:930px) {
     #hero{
@@ -1008,7 +1016,9 @@ body {
     }
 }
 
-@media only screen and (max-width:600px) {
+// Small Mobile Devices
+
+@media only screen and (max-width:765px) {
     #hero{
 
         .hero-text{

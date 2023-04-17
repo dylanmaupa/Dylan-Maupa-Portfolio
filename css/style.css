@@ -545,7 +545,7 @@ body {
   background: var(--white);
   padding: 30px 40px;
   color: var(--bg-color);
-  width: 18%;
+  width: 20%;
   font-size: 20px;
   position: absolute;
   bottom: -8rem;
@@ -852,7 +852,7 @@ body {
     line-height: 0.75cm;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 765px) {
   #hero .hero-text {
     top: 30%;
     padding-inline: 10px;

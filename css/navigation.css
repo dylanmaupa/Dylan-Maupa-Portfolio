@@ -25,12 +25,12 @@ header {
   position: absolute;
   z-index: 2;
 }
-header .logo {
+header a .logo {
   display: flex;
   cursor: pointer;
-  width: 8%;
+  width: 100%;
 }
-header .logo img {
+header a .logo img {
   width: 100%;
 }
 header .menu {
@@ -62,23 +62,28 @@ header .nav-items li a:hover {
   }
 }
 @media only screen and (max-width: 1200px) {
-  header .logo {
-    width: 10%;
+  header a .logo {
+    width: 80%;
   }
 }
 @media only screen and (max-width: 991px) {
-  header .logo {
-    width: 12%;
+  header a .logo {
+    width: 70%;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 765px) {
   header nav {
     display: none;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
   }
   header .menu {
     display: block;
+    cursor: pointer;
+  }
+  .active {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s ease-in-out;
   }
 }/*# sourceMappingURL=navigation.css.map */
